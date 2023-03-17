@@ -1,1 +1,1 @@
-# iti-blogs
+# iti-blog
