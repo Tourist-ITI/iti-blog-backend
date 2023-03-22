@@ -66,7 +66,7 @@ exports.sharpHandler = async (buffer, id) => {
       width: 600,
       height: 400,
       fit: "contain",
-      background: { r: 255, g: 255, b: 255, alpha: 0.5 },
+      background: { r: 255, g: 255, b: 255, alpha: 1 },
     })
     .flatten({ background: "#fff" })
     .toFormat("jpeg")
