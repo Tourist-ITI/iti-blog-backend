@@ -22,7 +22,7 @@ const signIn = async (req, res, next) => {
       res,
       {
         access_token,
-        userBody,
+        user: userBody,
       },
       "login successfully"
     );
