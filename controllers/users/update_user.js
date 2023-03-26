@@ -1,4 +1,4 @@
-const { uploadCloud } = require("../../middlewares/cloudinary/cloudinary");
+const { uploadCloudBB } = require("../../middlewares/imgbb/imgbb");
 const {
   sharpHandler,
   uploadSingleImage,
@@ -31,11 +31,11 @@ exports.updateUser = async (req, res, next) => {
     await userModel.findByIdAndUpdate(req.userID, userBody);
 
     if (req.files?.photo) {
-      userBody.photo = await uploadCloud(...req.files.photo);
+      userBody.photo = await uploadCloudBB(...req.files.photo);
     }
 
     if (req.files?.cover_photo) {
-      userBody.cover_photo = await uploadCloud(...req.files.cover_photo);
+      userBody.cover_photo = await uploadCloudBB(...req.files.cover_photo);
     }
 
     await userModel.findByIdAndUpdate(req.userID, userBody);

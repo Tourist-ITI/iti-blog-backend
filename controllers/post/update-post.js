@@ -1,4 +1,5 @@
 const { uploadCloud } = require("../../middlewares/cloudinary/cloudinary");
+const { uploadCloudBB } = require("../../middlewares/imgbb/imgbb");
 const { postModel } = require("../../models");
 const { successHandler, errorHandler } = require("../../utils/responseHandler");
 
@@ -22,7 +23,7 @@ exports.updatePost = async (req, res, next) => {
     let postData = { ...req.body, user: req.userID };
 
     if (req.file?.photo) {
-      postData.photo = await uploadCloud(req.file.photo);
+      postData.photo = await uploadCloudBB(req.file.photo);
     }
 
     await postModel.findByIdAndUpdate(postID, {
