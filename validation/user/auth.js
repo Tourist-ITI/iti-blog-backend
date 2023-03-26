@@ -13,6 +13,7 @@ const signupSchema = joi.object({
     .required()
     .label("confirm password")
     .messages({ "any.only": "{{#label}} does not match" }),
+    gender:joi.string()
 });
 
 const signinScehma = joi.object({
