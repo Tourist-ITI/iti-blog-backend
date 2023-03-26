@@ -2,6 +2,4 @@
 
 ## image cloud : https://api.imgbb.com/
 
-
-![Screenshot (11)](https://user-images.githubusercontent.com/61599746/227769198-dde94847-ec52-41c0-a4e8-1b0fb22bedfa.png)
-
+![Screenshot (11)](https://user-images.githubusercontent.com/61599746/227769258-6e3efcb3-4043-4a8e-821b-f40b4e651502.png)
