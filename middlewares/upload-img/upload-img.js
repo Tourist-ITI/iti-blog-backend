@@ -63,7 +63,7 @@ exports.sharpHandler = async (buffer, id) => {
   const uniqueNumber = Date.now();
   await sharp(buffer)
     .resize({
-      width:1000,
+      width:2000,
       fit: "contain",
       background: { r: 255, g: 255, b: 255, alpha: 1 },
     })
