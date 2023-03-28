@@ -69,7 +69,7 @@ exports.sharpHandler = async (buffer, id) => {
     })
     .flatten({ background: "#fff" })
     .toFormat("jpeg")
-    .webp({ quality: 90 })
+    // .webp({ quality: 90 })
     .toFile(`uploads/user-${id}-${uniqueNumber}.jpeg`);
 
   return `uploads/user-${id}-${uniqueNumber}.jpeg`;
